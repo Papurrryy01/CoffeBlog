@@ -1,0 +1,216 @@
+body{
+    font-family: Arial;
+}
+img{
+    max-width: 100%;
+}
+p{
+    line-height: 2;
+}
+
+header{
+    background-image: url(images/skylineVice.png);
+    background-size: cover;
+    color: rgb(255, 254, 254);
+    text-align: center;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*white block letters*/
+header h1{
+    font-family: 'pacifico', cursive;
+    font-size: 4rem;
+    color: #ffffff;
+    text-shadow:
+        2px 2px 0px #ff00ff,
+        -2px -2px 0px #ff00ff,
+        0px 0px 10px #ff00ff;
+    margin:0 0 .25rem 0;
+}
+/* Neon Underline */
+.title-pink::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+    width:100%;
+    height: 6px;
+    background: #ff4de6;
+    box-shadow: 
+    0 0 5px #ff4de6,    
+    0 0 10px #ff4de6,
+    0 0 20px #ff4de6,
+    0 0 40px #ff4de6;
+}
+header h2{
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    color: #ffffff;
+    text-shadow:
+        1px 1px 0px #dd01dd,
+        -1px -1px 0px #ae01ae,
+        0px 0px 5px #760176;
+}
+header p{
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    color: #ffffff;
+    text-shadow:
+        1px 1px 0px #a900a9,
+        -1px -1px 0px #780178,
+        0px 0px 5px #4c004c;
+}
+.MiamiCoffee {
+    width: 50vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/*main*/
+    main h2{
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'pacifico', cursive;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: #6b6b6b; 
+        
+    }
+    main h3{
+        font-size: 2rem;
+        font-family: 'times new roman', serif;
+        color: #6b6b6b;
+    }
+    main p{
+        font-size: 1.2rem;
+        color: #6b6b6b;
+    }
+    
+
+ /*button*/
+    .btn-more{
+        display: inline-block;
+        background-color: #6b6b6b;
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+/*footer*/
+#courses-first h1{
+    text-align:left;
+    font-size: 2rem;
+    font-family: 'times new roman', serif;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 10px;
+    color: #242424; 
+}
+#courses-first h2{
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'times new roman', serif;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: 10px;
+    color: #242424;
+}
+#courses-first h3{
+    text-align:left;
+    font-size: 1rem;
+    font-family: 'times new roman', serif;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1px;
+    color: #282828; 
+}
+#courses-first h4{
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'times new roman', serif;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1px;
+    color: #282828;
+}
+#courses-first .btn-more{
+    display: inline-block;
+    background-color: #d58000;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-left: 1px;
+}
+#courses-second h1{
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', serif;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 10px;
+    color: #242424;
+}
+#courses-second h2{
+    text-align:left;
+    font-size: 1rem;
+    font-family: 'times new roman', serif;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1px;
+    color: #282828;
+}
+#courses-second .btn-more{
+    display: inline-block;
+    background-color: #d58000;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin-left: 0.45px;
+    margin-bottom: -40px;
+}
+#courses-third h1{
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', serif;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 10px;
+    color: #242424;
+}
+.footer-panel {
+    size: 100%;
+    background: #000;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+.footer-links {
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.footer-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
