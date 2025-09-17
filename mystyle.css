@@ -7,23 +7,22 @@ img{
 p{
     line-height: 2;
 }
-
+a{
+    color: white;
+    text-decoration: none;
+}
 header{
     background-image: url(images/skylineVice.png);
     background-size: cover;
     color: rgb(255, 254, 254);
     text-align: center;
     height: 300px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
+
 /*white block letters*/
 header h1{
     font-family: 'pacifico', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #ffffff;
     text-shadow:
         2px 2px 0px #ff00ff,
@@ -48,8 +47,8 @@ header h1{
 }
 header h2{
     font-family: 'Arial', sans-serif;
-    font-size: 1.5rem;
-    margin: 0;
+    font-size: 1rem;
+    margin-top: 10px;
     color: #ffffff;
     text-shadow:
         1px 1px 0px #dd01dd,
@@ -57,8 +56,9 @@ header h2{
         0px 0px 5px #760176;
 }
 header p{
+    align-items: center;
     font-family: 'Arial', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 0;
     color: #ffffff;
     text-shadow:
@@ -91,8 +91,22 @@ header p{
         font-size: 1.2rem;
         color: #6b6b6b;
     }
-    
-
+    .container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-container{
+    display: flex;
+    color: #6b6b6b;
+    line-height: 2;
+}
+.about-container img{
+    width: 50%;
+    height: 50%;
+    margin-right: 20px;
+    margin-top: 30px;
+    }    
  /*button*/
     .btn-more{
         display: inline-block;
@@ -213,4 +227,30 @@ header p{
     display: flex;
     justify-content: center;
     gap: 15px;
+}
+.layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem; 
+}
+.layoutn main {
+    flex: 68%;   
+}
+.sidebar {
+    flex: 32%;  
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -17.5rem;
+    margin-right: -17.5rem;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right:1rem;
 }
