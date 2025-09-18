@@ -47,7 +47,7 @@ header h1{
 }
 header h2{
     font-family: 'Arial', sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
     margin-top: 10px;
     color: #ffffff;
     text-shadow:
@@ -58,7 +58,7 @@ header h2{
 header p{
     align-items: center;
     font-family: 'Arial', sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0;
     color: #ffffff;
     text-shadow:
@@ -241,10 +241,10 @@ header p{
 }
 .menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-left: -17.5rem;
-    margin-right: -17.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 
 }
 .header {
@@ -252,5 +252,177 @@ header p{
     justify-content: space-between;
     align-items: center;
     margin-left: 1rem;
-    margin-right:1rem;
+    margin-right: 1rem;
+}
+.contact-from {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: left;
+}
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.recipes h1{
+    font-size: 1.5rem;
+    margin-bottom: -5px;
+    margin-top: 30px;
+    margin-left: 15px;
+    color: #676767;
+}
+.recipes p{
+    margin-left: 3rem;
+}
+
+/* first botton  */
+.btn-moreCBT h1{
+    font-size: 3rem;
+    margin-left: -1px;
+    font-family:'Times New Roman';
+}
+.btn-moreCBT p{
+    margin-bottom: 3rem;
+}
+
+/* second botton */
+.btn-more3DCR h1{
+    font-size: 3rem;
+    margin-left: -1px;
+    font-family:'Times New Roman';
+}
+.btn-more3DCR h3{
+    margin-left: 2rem;
+}
+.btn-more3DCR p{
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    margin-top: -2rem;
+}
+
+/* third button */
+.btn-moreCB h1{
+    font-size: 3rem;
+    margin-left: -1px;
+    font-family:'Times New Roman';
+}
+.btn-moreCB p{
+    margin-bottom: 3rem;
+}
+/* === FLEX LAYOUT FOR COURSE SECTION === */
+
+.courseFlexWrap {
+   display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.courseFlexCard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.coursesP {                     /* left column (image area) */
+    flex: 1 1 60%;
+    min-width: 0;
+}
+
+.courseFlexInfo {               /* right column (text) */
+    flex: 1 1 40%;
+    display: flex;
+    min-width: 0;
+}
+
+/* Make the image actually shrink to the column width */
+.coursesP img {
+    width: 100%;
+    height: auto;
+    display:block;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* force left in this block */
+#coursesH h2, #coursesH h3, #coursesH h4 {
+    text-align: left !important;
+}
+
+/* Button */
+.btn-enrollFlex {
+    display: inline-block;
+    background-color: #ff9226;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+/* Stack on small screens */
+@media (max-width: 900px) {
+  .courseFlexWrap { flex-direction: column; }
+  .coursesP, .courseFlexInfo { flex: 1 1 auto; }
+}
+/* Headings inside right column */
+.courseFlexInfo h2 {
+    font-size: 2rem;
+    font-family: 'Georgia', serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    color: #2c2c2c;
+    letter-spacing: 1px;
+}
+
+.courseFlexInfo h3 {
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;    /* clean sans-serif for details */
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.courseFlexInfo h4 {
+  font-size: 1.1rem;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: 1.5rem;             /* more spacing before button */
+  color: #666;
+}
+
+/* Button with hover effect */
+.btn-enrollFlex {
+  display: inline-block;
+  background-color: #ff9226;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border-radius: 6px;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-enrollFlex:hover {
+  background-color: #e67e1f;         /* darker orange on hover */
+  transform: translateY(-2px);       /* subtle lift */
+}
+
+/* Adjust left column title "Courses" */
+.coursesP h1 {
+  font-size: 2rem;
+  font-family: 'Arial Black', sans-serif;
+  margin-bottom: 1rem;
+  color: #222;
+  text-align: center;
 }
